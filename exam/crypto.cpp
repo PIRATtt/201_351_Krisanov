@@ -1,4 +1,5 @@
 #include "crypto.h"
+#include "QCryptographicHash"
 
 crypto::crypto()
 {

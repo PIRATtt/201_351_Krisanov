@@ -2,15 +2,15 @@
 #define CRYPTO_H
 
 #include <QObject>
-#include <QBuffer>      // Буффер, из него берем по порядку 256 байт
-#include <QDebug>       // Для выводя в консоль
-#include <QFile>        // Для работы с файлами
-#include <openssl\evp.h>// OpenSSL для шифрования
-#include <openssl\err.h>// OpenSSL для шифрования
+#include <QDebug>
+#include <QFile>
+#include <openssl\evp.h>
+#include <openssl\err.h>
 #include <QJsonArray>   //
 #include <QJsonObject>  // Для работы с Json форматом
 #include <QJsonDocument>//
-
+#include "QByteArray"
+#include "QString"
 
 struct Person {
 public:
