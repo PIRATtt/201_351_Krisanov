@@ -1,0 +1,10 @@
+{
+    "1": {
+        "parametrs":{
+            "gun": "Пистолет",
+            "health":100,
+            "diatance":60.5
+        },
+        "status": "true"
+    }
+}
