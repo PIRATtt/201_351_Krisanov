@@ -1,5 +1,6 @@
 #include "crypto.h"
 #include "QCryptographicHash"
+#include "QByteArray"
 
 crypto::crypto()
 {

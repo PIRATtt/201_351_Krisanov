@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
     qInfo() << "hash = " << hash;
 
     // 4 Сравнение хэша
-    const QByteArray hash0_base64 = QByteArray("Sgwcwf8fpdaQKuw9ZN7UpXVbne6OZi9cqXmN3AFi4Ek=");
+    const QByteArray hash0_base64 = QByteArray("xHX/4MI8t5xEkVzjkK5/aAuATWGN3jDukpM2DIWj03M=");
     bool checkresult =(hash==hash0_base64);
     qDebug() << "checkresult = " << checkresult;
 
@@ -56,6 +56,7 @@ int main(int argc, char *argv[])
         int result = QMessageBox::critical(nullptr,"Warning!","The application has been modified!");
         return -1;
     }
+
 
     return a.exec();
 }
