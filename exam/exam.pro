@@ -19,16 +19,19 @@ SOURCES += \
     crypto.cpp \
     main.cpp \
     mainwindow.cpp \
-    persons.cpp
+    persons.cpp \
+	newperson.cpp
 
 HEADERS += \
     crypto.h \
     mainwindow.h \
-    persons.h
+    persons.h \
+	newperson.h
 
 FORMS += \
     mainwindow.ui \
-    persons.ui
+    persons.ui \
+	newperson.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

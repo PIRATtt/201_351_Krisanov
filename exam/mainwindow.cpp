@@ -17,11 +17,13 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-// Авторизация
+
 void MainWindow::on_Ok_clicked() {
 
     if (ui->code_text->text() == "1234") {
         this->close();
+
+        persons_app->create();
         persons_app->show();
     } else {
         ui->error->setVisible(true);

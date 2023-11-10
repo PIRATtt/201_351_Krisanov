@@ -2,6 +2,7 @@
 #define PERSONS_H
 
 #include "crypto.h"
+#include "newperson.h"
 #include <QWidget>
 #include <QDialog>              // Для графики
 #include <QTableWidgetItem>     // Таблица
@@ -21,11 +22,25 @@ public:
     explicit persons(QWidget *parent = nullptr);
     ~persons();
 
-    void create_table();
+    void create();
+    QList<Person> * array = nullptr;
+    int number = 0;
+    void change_person();
+
+private slots:
+    void on_btn_next_clicked();
+
+    void on_btn_back_clicked();
+
+    void on_btn_add_clicked();
 
 private:
     Ui::persons *ui;
     QByteArray hex_hash;
+    newperson *pers;
+
+public slots:
+    void addNew(Person prs);
 };
 
 #endif // PERSONS_H

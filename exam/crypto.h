@@ -12,6 +12,13 @@
 #include <QJsonDocument>//
 
 
+struct Person {
+public:
+    QString gun;
+    int hp;
+    float dist;
+};
+
 class crypto
 {
 public:
